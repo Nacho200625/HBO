@@ -1,0 +1,338 @@
+/* nuestro root html tiene un font-size de 16px por defecto
+ equivalente a 1rem. rem es medida con respecto a root (html) 
+Utilizar rem para fuente pues se adapta a las distintas resoluciones */
+
+/* Solo si para páginas fullscreen sin barra de desplamiento */
+html,
+body {
+    /*    height: 100%;*/
+}
+
+/* Definición de la fuente local */
+@font-face {
+    font-family: "sst";
+    src: url(../font/MaxSans-Regular.woff2);
+}
+
+
+/* Tamaño de la caja de borde a borde 
+padding y borde no modifica el tamaño del elemento */
+* {
+    box-sizing: border-box;
+}
+
+/* Reglas comunes a todos los elementos en body 
+margin:0 para quitar ese pequeño enmarcado blanco indeseable */
+body {
+    margin: 0;
+
+    font-family: "sst";
+
+}
+
+.container {
+    /*    width: 80%;*/
+    margin: 0 auto;
+}
+
+header {
+    background-color: #000000;
+    height: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
+main {
+    background-image: url(../img/fondo.avif);
+    height: 500px;
+}
+
+footer {
+    background-color: #000000;
+    height: 100px;
+}
+
+/* flex orientación row */
+.row {
+    display: flex;
+}
+
+/* flex orientación column */
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+/* Alineación eje principal center */
+.justify-content-center {
+    justify-content: center;
+}
+
+/* Alineación eje principal space beetween 
+si row = 1º y ultimo en izq y der resto reparten espacio
+si column =  1º y ultimo en arriba y abajo resto reparten espacio */
+.justify-content-between {
+    justify-content: space-between;
+}
+
+/* Alineación eje principal end
+si row = derecha
+si column = abajo */
+.justify-content-end {
+    justify-content: end;
+}
+
+/* Alineación eje secundario center 
+si row = centrado verticalmente
+si column = centrado horizontalmente */
+.align-items-center {
+    align-items: center;
+}
+
+.col-50 {
+    width: 50%;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.h-100 {
+    height: 100%;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.p-0 {
+    padding: 0;
+}
+
+/* Flotación */
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+/* limpiar flotación */
+.cb {
+    clear: both;
+}
+
+/* Position */
+.position-absolute {
+    position: absolute;
+}
+
+.position-relative {
+    position: relative;
+}
+
+/* Alineación del Texto centro */
+.text-center {
+    text-align: center;
+}
+
+/* Alineación del Texto derecha */
+.text-end {
+    text-align: end;
+}
+
+/* Fondo y texto negro y blanco */
+.bg-black {
+    background-color: black;
+}
+
+.text-black {
+    color: black;
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.text-white {
+    color: white;
+}
+
+/* Reglas comunes botones */
+.btn {
+    /*
+    border: 0;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;*/
+}
+
+/* Reglas específicas botón azul */
+.btn-blue {
+    /*    background-color: #304a70;
+    color: white;*/
+}
+
+/* Reglas para las cajas de formularios */
+.box-form {
+    /*    
+    border: solid 1px rgb(230, 228, 228);
+    background-color: #4d77a1;
+    width: 100%;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 1rem;*/
+}
+
+.shadow {
+    box-shadow: 0 0 10px gainsboro;
+}
+
+/*
+nav ul, nav li {
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    list-style-type: none;
+    position: relative;
+    float: left;
+}
+nav ul li ul {
+    position: absolute;
+    display: none;
+}
+nav li:hover ul {
+    display: block;
+}
+*/
+
+
+.btn-n {
+    border: 0;
+    background-color: #000000;
+    color: white;
+    font-weight: bold;
+}
+
+.btn-b {
+    border: 0;
+    border-radius: 5px;
+    background-color: #002ce7;
+    font-weight: bold;
+    padding: 8px;
+    margin-left: 10px;
+    color: white;
+
+
+}
+
+.container5 {
+    background-color: black;
+    padding-bottom: 40px;
+    background: linear-gradient(to bottom, rgb(6, 7, 27, 0) 55%, rgb(6, 7, 27, 1) 75%);
+
+}
+
+.ml {
+    margin-left: 220px;
+}
+
+h2 {
+    color: white;
+}
+
+.mt {
+    margin-top: 180px;
+}
+
+.img {
+    border-right: solid 2px #022be7;
+
+}
+.img2{
+    border-right: solid 4px #022be7;
+    width: 100%;
+}
+.i {
+    position: relative;
+}
+
+.container6 {
+    position: absolute;
+
+    background: linear-gradient(to bottom, rgb(2, 43, 231, 0)70%, rgb(2, 43, 231)95%);
+    width: 100%;
+    height: 425px;
+    top: 0;
+
+}
+
+.mtt {
+    margin-top: 350px;
+}
+
+.m-t {
+    margin-top: -10px;
+    font-weight: normal;
+}
+
+.m-ttt {
+    margin-top: -20px;
+}
+.pt{
+    padding-bottom: 20px;
+}
+.container7{
+    height: 400px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+.img3{
+    position: absolute;
+    right: 0;
+}
+.img4{
+    position: absolute;
+    right: 150px;
+    bottom: 115px;
+}
+.img5{
+    position: absolute;
+    right: 180px;
+    bottom: 115px;
+}
+.ft{
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+.container10{
+  position: absolute;
+    background: linear-gradient(to left ,rgb(0, 0, 0,0)50%,rgb(0, 0, 0,1)95%);
+    width: 500px;
+    height: 280px;
+    right: 0;
+}
+.container8{
+    height: 270px;
+    width: 100%;
+    background-color: black;
+    position: relative;
+    padding-bottom: 100px;
+}
+.nl{
+    margin-left: 30px;
+}
+.m-tt{
+    margin-top: -50px;
+}
