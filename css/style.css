@@ -278,13 +278,22 @@ h2 {
 
 }
 
-.mtt {
-    margin-top: 290px;
-}
 
 .m-t {
-    margin-top: -10px;
-    font-weight: normal;
+    position: absolute;
+    bottom: -5%;
+    align-items: center;
+    left: 0;
+    right: 0;
+
+}
+.m-ti {
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    left: 0;
+    right: 0;
+
 }
 
 .m-ttt {
@@ -354,4 +363,8 @@ h2 {
     width: 100%;
     background: linear-gradient(to left ,rgb(0, 0, 0,0)40%,rgb(0, 0, 0,1)75%);
    
+}
+.mtt{
+ margin-top: 300px;
+
 }
