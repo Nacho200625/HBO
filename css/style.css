@@ -25,7 +25,7 @@ padding y borde no modifica el tamaño del elemento */
 margin:0 para quitar ese pequeño enmarcado blanco indeseable */
 body {
     margin: 0;
-
+    overflow-x: hidden;
     font-family: "sst";
 
 }
